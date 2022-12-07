@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>
+  公営住宅 政令月収算出
+</title>
+<link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+<div class="top">
+<h1>
+公営住宅政令月収等の算出
+</h1>
+</div>
+<div class="IncomeZone">
+<h2>
+所得の計算
+</h2>
+
+<a class="#">給与収入</a>
+<a class="#">年金収入</a>
+<a class="#">その他所得</a>
+<a class="#">年齢</a>
+
+<p>
+申込者本人：
+<input type="text" id="salary01" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="pension01" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="other01" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="age01" minlength="1" maxlength="3" size="1">
+才
+<input type="radio" name="radioA" value="">
+<input type="radio" name="radioA" value="">
+<input type="radio" name="radioA" value=""checked>
+</p>
+
+<p>
+同居人１：
+<input type="text" id="salary02" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="pension02" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="other02" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="age02" minlength="1" maxlength="3" size="1">
+才
+<input type="radio" name="radioB" value="">
+<input type="radio" name="radioB" value="">
+<input type="radio" name="radioB" value=""checked>
+</p>
+
+<p>
+同居人２：
+<input type="text" id="salary03" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="pension03" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="other03" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="age03" minlength="1" maxlength="3" size="1">
+才
+<input type="radio" name="radioC" value="">
+<input type="radio" name="radioC" value="">
+<input type="radio" name="radioC" value=""checked>
+</p>
+
+<p>
+同居人３：
+<input type="text" id="salary04" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="pension04" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="other04" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="age04"　minlength="1" maxlength="3" size="1">
+才
+<input type="radio" name="radioD" value="">
+<input type="radio" name="radioD" value="">
+<input type="radio" name="radioD" value=""checked>
+</p>
+
+<p>
+同居人４：
+<input type="text" id="salary05" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="pension05" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="other05" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="age05"　minlength="1" maxlength="3" size="1">
+才
+<input type="radio" name="radioE" value="">
+<input type="radio" name="radioE" value="">
+<input type="radio" name="radioE" value=""checked>
+</p>
+
+<p>
+同居人５：
+<input type="text" id="salary06" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="pension06" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="other06" data-type="number" minlength="1" maxlength="9" size="6">
+円
+<input type="text" id="age06"　minlength="1" maxlength="3" size="1">
+才
+<input type="radio" name="radioF" value="">
+<input type="radio" name="radioF" value="">
+<input type="radio" name="radioF" value=""checked>
+</p>
+
+</div>
+
+<div class="DeductionZone">
+<h2>
+控除の計算
+</h2>
+<p>
+<a class="#">同居する親族：</a><input type="text" id="deduction01" minlength="1" maxlength="1" size="3">人
+</p>
+<p>
+<a class="#">同居しない親族：</a><input type="text" id="deduction02" minlength="1" maxlength="1" size="3">人
+</p>
+<p>
+<a class="#">老人扶養：</a><input type="text" id="deduction03" minlength="1" maxlength="1" size="3">人
+</p>
+<p>
+<a class="#">特定扶養：</a><input type="text" id="deduction04" minlength="1" maxlength="1" size="3">人
+</p>
+<p>
+<a class="#">障がい者控除：</a><input type="text" id="deduction05" minlength="1" maxlength="1" size="3">人
+</p>
+<p>
+<a class="#">特別障がい者控除：</a><input type="text" id="deduction06" minlength="1" maxlength="1" size="3">人
+</p>
+</div>
+
+
+<div class="ResultZone">
+<h2>
+結果の表示
+</h2>
+
+<button id ="button" class="#">
+  計算する
+</button>
+
+<p>
+年間所得は、
+<input type="text" id="result01" data-type="number" minlength="0" maxlength="0" size="7">
+
+で政令月額が
+<input type="text" id="result02" data-type="number" minlength="0" maxlength="0" size="7">
+になります。
+<br>
+（所得の計算<input type="text" id="result03" data-type="number" minlength="0" maxlength="0" size="5">-
+控除の計算<input type="text" id="result04" data-type="number" minlength="0" maxlength="0" size="5">）
+</p>
+収入基準は、158000以下、裁量世帯は、248000以下
+<p>
+
+
+分位が
+<input type="text" id="result05" minlength="0" maxlength="0" size="7">
+になり
+
+家賃算定基礎額は
+<input type="text" id="result06" data-type="number" minlength="0" maxlength="0" size="7">
+円になります。
+</p>
+</div>
+<script src="program3.js"></script>
+</body>
+</html>

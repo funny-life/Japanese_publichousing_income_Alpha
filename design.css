@@ -1,0 +1,35 @@
+body {
+  width: 100% ;
+  min-width: 1000px;
+  text-align: center;
+}
+
+h1 {
+    text-align:center;
+    color: black;/*文字色*/
+    border: solid 3px black;/*線色*/
+    margin: 15px 180px;
+    padding: 0.5em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
+  }
+  
+.IncomeZone{
+    text-align:center;
+    border: solid 3px black;/*線色*/
+    border-radius: 0.5em;/*角丸*/
+    margin: 25px 180px;
+  }
+  
+.DeductionZone{
+      text-align:center;
+    border: solid 3px black;/*線色*/
+    border-radius: 0.5em;/*角丸*/
+    margin: 25px 180px;
+  }
+  
+.ResultZone{
+        text-align:center;
+    border: solid 3px black;/*線色*/
+    border-radius: 0.5em;/*角丸*/
+    margin: 25px 180px;
+  }
