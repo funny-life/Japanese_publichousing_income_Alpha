@@ -144,7 +144,40 @@ kari = kari ;
 }else if(kari < 0){
 kari = 0 ;
 }
+    
+    
 
+let kari2 = Math.floor(kari/12); 
+
+let division ;
+let base ;
+if(kari2 <= 123000){
+    division = '分位１';
+    base = 37100;
+}else if(kari2 <= 153000){
+    division = "分位２";
+    base = 45000 ;
+}else if(kari2 <= 178000){
+    division = "分位３";
+    base = 53200 ;
+}else if(kari2 <= 200000){
+    division = "分位４";
+    base = 61400 ;
+}else if(kari2 <= 238000){
+    division ="分位５";
+    base = 70900 ;
+}else if(kari2 <= 268000){
+    division ="分位６";
+    base = 81400 ;
+}else if(kari2 <= 322000){
+    division ="分位７";
+    base = 94100 ;
+}else if(kari2 > 322000){
+    division = "分位８";
+    base = 107700 ;
+}    
+    
+/*
 let division ;
 let base ;
 if(kari <= 123000){
@@ -171,7 +204,7 @@ if(kari <= 123000){
 }else if(kari > 322000){
     division = "分位８";
     base = 107700 ;
-}
+}*/
 
 
 result04.value = deduction;
