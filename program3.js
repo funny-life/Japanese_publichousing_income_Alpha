@@ -151,32 +151,34 @@ let kari2 = Math.floor(kari/12);
 
 let division ;
 let base ;
-if(kari2 <= 123000){
+if(kari2 <= 104000){
     division = '分位１';
-    base = 37100;
-}else if(kari2 <= 153000){
+    base = 34400;
+}else if(kari2 <= 123000){
     division = "分位２";
-    base = 45000 ;
-}else if(kari2 <= 178000){
+    base = 39700 ;
+}else if(kari2 <= 139000){
     division = "分位３";
-    base = 53200 ;
-}else if(kari2 <= 200000){
+    base = 45400 ;
+}else if(kari2 <= 158000){
     division = "分位４";
-    base = 61400 ;
-}else if(kari2 <= 238000){
+    base = 51200 ;
+}else if(kari2 <= 186000){
     division ="分位５";
-    base = 70900 ;
-}else if(kari2 <= 268000){
+    base = 58500 ;
+}else if(kari2 <= 214000){
     division ="分位６";
-    base = 81400 ;
-}else if(kari2 <= 322000){
+    base = 67500 ;
+}else if(kari2 <= 259000){
     division ="分位７";
-    base = 94100 ;
-}else if(kari2 > 322000){
+    base = 79000 ;
+}else if(kari2 <= 313000){
     division = "分位８";
-    base = 107700 ;
-}    
-    
+    base = 91100 ;
+}else if(kari2 > 313000){
+    division = "高額";
+    base = "近傍" ;
+}
 /*
 let division ;
 let base ;
